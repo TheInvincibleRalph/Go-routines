@@ -20,7 +20,7 @@ func main() {
 
 	for i := 0; i < 100; i++ {
 		w.Add(1)
-		go Increment(&w, &m) //this line of code passes in the memory location of the input variables of the Increment function thereby spawning a new go routine.
+		go Increment(&w, &m) //this line of code passes in the memory location of the objects of the Increment function thereby spawning a new go routine.
 	}
 
 	w.Wait() //this line blocks the main goroutine until the WaitGroup counter goes back to 0. This means that the main goroutine will wait here until all 100 goroutines have called wg.Done()
