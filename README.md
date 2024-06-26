@@ -23,6 +23,6 @@ After a deadlock is detected, it can be corrected by using one of the following 
 1. Process termination: one or more processes involved in the deadlock may be aborted. One could choose to abort all competing processes involved in the deadlock. This ensures that deadlock is resolved with certainty and speed. But the expense is high as partial computations will be lost. Or, one could choose to abort one process at a time until the deadlock is resolved. This approach has a high overhead because after each abort an algorithm must determine whether the system is still in deadlock. Several factors must be considered while choosing a candidate for termination, such as priority and age of the process.
 2. Resource preemption: resources allocated to various processes may be successively preempted and allocated to other processes until the deadlock is broken.
 
----[Wikipedia][https://en.wikipedia.org/wiki/Deadlock] 
+---[Wikipedia](https://en.wikipedia.org/wiki/Deadlock)
 
 
